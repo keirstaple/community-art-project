@@ -8,5 +8,27 @@ export default Ember.Route.extend({
     });
   },
 
-  actions: {}
+  actions: {
+    // addToFavorites(project) {
+    //   this.get('favorites').add(project);
+    // },
+
+    save(params) {
+      var newProject = this.store.createRecord('project', params);
+      newRestaurant.save();
+      this.transitionTo('index');
+    },
+
+    saveComment(params) {
+      var newComment = this.store.createRecord('comment', params);
+      newReview.save();
+      this.transitionTo('project');
+    },
+
+    destroyProject(project) {
+      project.destroyRecord();
+      this.transitionTo('index');
+    }
+
+  }
 });
