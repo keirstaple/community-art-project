@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin text($size:null, $weight:null, $l-height:null, $letter-spacing:null, $color:null) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $l-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
+
+@mixin flex ($display: flex, $justify: null, $align-items: null, $direction: null, $align-self: null) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align-items;
+  flex-direction: $direction;
+  align-self: $align-self;
+}
+
+@mixin grid($color){
+  background-color: $color;
+  @include size(50% 50%);
+}
+
+@mixin mainNav($color) {
+  font-size: 34px;
+  @include text($color: $color, $letter-spacing: 2px);
+}

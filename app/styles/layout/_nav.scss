@@ -1,0 +1,26 @@
+// This files contains any navigation styles
+
+#logo {
+}
+
+.mainNav {
+  background-color: tomato;
+  position: absolute;
+  left: -300px;
+  width: 70%;
+  overflow: auto;
+}
+
+.navIcon {
+  z-index: 1;
+  @include size(40px 40px);
+  @include flex(flex, $justify: space-around, $align-items: center);
+  flex-wrap: wrap;
+  padding: .4em;
+  cursor: pointer;
+  border-radius: 15%;
+  .iconbar {
+    @include size(30px 3px);
+    background-color: $primaryDark;
+  }
+}
