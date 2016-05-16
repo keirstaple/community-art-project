@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'community-art-project',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://community-art-proj.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
