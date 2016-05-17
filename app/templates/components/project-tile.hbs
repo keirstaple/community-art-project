@@ -1,22 +1,22 @@
-<!-- <div class="projectTile" style="background-image: linear-gradient(rgba(247, 247, 247, 0.6),rgba(247, 247, 247, 0.6)),url({{project.image}});; background-size: cover; background-position: center;">
-  <h2>{{project.title}}</h2>
-</div> -->
+
 <div class="projectItem">
   <div class="box1">
     <div class="box2">
-      <div class="projectTile">
-        <div class="left-column">
-          <img src="{{project.image}}" alt="Main Project Image">
-        </div>
-        <div class="right-column">
-          <h2>{{project.title}}</h2>
-          <div class="smallText">
-            <p>{{project.date}}</p>
-            <p>{{project.host_name}}</p>
-            <p>{{project.time}}</p>
+      {{#link-to 'project' project.id}}
+        <div class="projectTile">
+          <div class="left-column">
+            <img src="{{project.image}}" alt="Main Project Image">
+          </div>
+          <div class="right-column">
+            <h2>{{project.title}}</h2>
+            <div class="smallText">
+              <p>{{project.date}}</p>
+              <p>{{project.host_name}}</p>
+              <p>{{project.time}}</p>
+            </div>
           </div>
         </div>
-      </div>
+      {{/link-to}}
     </div>
   </div>
 </div>
