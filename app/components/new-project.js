@@ -6,6 +6,9 @@ export default Ember.Component.extend({
      projectFormShow() {
        this.set('addNewProject', true);
      },
+     cancelNewProjectForm() {
+       this.set('addNewProject', false);
+     },
      save() {
        var params = {
          title: this.get('title'),
