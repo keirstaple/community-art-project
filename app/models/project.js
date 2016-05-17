@@ -1,13 +1,13 @@
-import DS from 'ember-data/model';
+import DS from 'ember-data';
 
 export default DS.Model.extend({
-  name: DS.attr(),
+  title: DS.attr(),
   host_name: DS.attr(),
   date: DS.attr(),
   time: DS.attr(),
   location: DS.attr(),
+  contributor: DS.attr(),
   summary: DS.attr(),
   image: DS.attr(),
-  contributors: DS.attr(),
   comments: DS.hasMany('comment', {async: true})
 });
