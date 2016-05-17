@@ -1,6 +1,6 @@
-import Model from 'ember-data/model';
+import DS from 'ember-data/model';
 
-export default Model.extend({
+export default DS.Model.extend({
   name: DS.attr(),
   host_name: DS.attr(),
   date: DS.attr(),
