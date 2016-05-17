@@ -1,6 +1,13 @@
 // All header styling for the site
 
 .siteHeader {
-  @include flex($justify: space-between);
-  padding: 20px 0 0 0;
+  @include flex($justify: space-between, $align-items: center);
+  padding: 10px 0;
+}
+
+.homeHeader {
+  background-image: linear-gradient(to right, rgba($teal,0.5),rgba($teal,0.5)) , url("/img/building-painting.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
 }

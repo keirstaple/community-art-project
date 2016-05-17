@@ -1,6 +1,6 @@
 <div class="siteHeader">
-  <h2 id="logo">pARTicipate</h2>
-  <button id="menu-closed" {{action 'menuPressed'}}>
+  {{#link-to 'index'}}<h2 id="logo">pARTicipate</h2>{{/link-to}}
+  <button id="menu-btn" {{action 'menuPressed'}}>
     <div class="navIcon">
       <div class="iconbar"></div>
       <div class="iconbar"></div>
@@ -13,6 +13,6 @@
   <div class="nav-list">
     <h2>Upcoming Projects</h2>
     <h2>Finished Projects</h2>
-    <h2>About</h2>
+    <h2>{{#link-to 'about'}}About{{/link-to}}</h2>
   </div>
 </nav>

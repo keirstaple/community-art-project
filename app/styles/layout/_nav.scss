@@ -1,5 +1,13 @@
  //This files contains any navigation styles
 
+#logo, #menu-btn {
+  h2 {
+    margin: 0;
+    padding: 0;
+    height: 10px;
+  }
+}
+
 .mainNav-closed {
   background-color: $teal;
   color: $primaryLight;
