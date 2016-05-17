@@ -2,12 +2,26 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-.adminButtons {
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
+.secondaryBtn {
+  border: 1px solid black;
+  background-color: $primaryLight;
+  @extend %headerFont;
+  @include text(1.2em);
+  display: block;
+  margin: 0 auto;
 }
 
-.shortBtn {
-  max-height: 20px;
+.viewAll {
+  @extend %headerFont;
+  @extend %uppercase;
+  border: 3px solid $teal;
+  @extend %centeredText;
+  padding: 5px 0px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.down-arrow-icon {
+  @include size(46px);
+  margin-bottom: 25px;
 }

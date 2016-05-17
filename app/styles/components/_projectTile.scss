@@ -1,0 +1,56 @@
+.projectItem {
+  margin-bottom: 50px;
+
+}
+.projectTile {
+  margin-left: 10px;
+  // background-image: url("/img/double-border.png");
+  background-repeat: no-repeat;
+  height: 180px;
+  @include flex();
+  .left-column {
+    width: 100px;
+    margin: 20px 10px 0px 25px;
+    overflow: hidden;
+    img {
+      height: 100px;
+    }
+  }
+  .right-column {
+    height: 150px;
+    margin-right: 8px;
+    @include flex($direction: column, $justify: center);
+    h2 {
+      @include text(22px);
+    }
+    p {
+      @include text(12px, $l-height: 7px);
+      @extend %headerFont;
+    }
+  }
+}
+
+.box1 {
+  border: 1px solid $teal;
+  height: 150px;
+}
+
+.box2 {
+  border: 1px solid $teal;
+  height: 150px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.projectFeed {
+  h3 {
+    @extend %centeredText;
+    margin-bottom: 0px;
+  }
+  hr {
+    width: 65%;
+    border: 1px solid $teal;
+    margin-bottom: 35px;
+  }
+}

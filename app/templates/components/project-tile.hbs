@@ -1,7 +1,22 @@
-<!-- {{yield}} -->
-<div class="projectTile">
-  {{#link-to 'project' project.id}}
-    <h2>{{project.title}}</h2>
-    <img src="{{project.image}}" alt="{{project.title}}">
-  {{/link-to}}
+
+<div class="projectItem">
+  <div class="box1">
+    <div class="box2">
+      {{#link-to 'project' project.id}}
+        <div class="projectTile">
+          <div class="left-column">
+            <img src="{{project.image}}" alt="Main Project Image">
+          </div>
+          <div class="right-column">
+            <h2>{{project.title}}</h2>
+            <div class="smallText">
+              <p>{{project.date}}</p>
+              <p>{{project.host_name}}</p>
+              <p>{{project.time}}</p>
+            </div>
+          </div>
+        </div>
+      {{/link-to}}
+    </div>
+  </div>
 </div>

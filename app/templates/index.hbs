@@ -1,17 +1,31 @@
-
-{{outlet}}
-<div class="container">
-  <h1>pARTicipate</h1>
-
-  {{#link-to 'about'}}About{{/link-to}}
-  {{#link-to 'contact'}}Contact{{/link-to}}
-  <br>
-  {{new-project save="save"}}
-  <div class="projectFeed">
-    <ul>
-      {{#each model as |project|}}
-        {{project-tile project=project destroyProject="destroyProject"}}
-      {{/each}}
-    </ul>
+<div class="homeHeader">
+  <div class="header-text">
+    <h1>pARTicipate</h1>
+    <h2 class="tagline">Create, Collaborate, and Appreciate local art.</h2>
   </div>
+  {{#scroll-to href='#homepage-content'}}
+    <img class="down-arrow-icon" src="/img/down-chevron.png" alt="down arrow icon" />
+  {{/scroll-to}}
+</div>
+<div class="container">
+  <div id="homepage-content">
+    <!-- {{new-project save="save"}} -->
+    <div class="projectFeed">
+      <h3>Upcoming Art Projects</h3>
+      <hr>
+      <ul>
+        {{#each model as |project|}}
+        {{project-tile project=project}}
+        {{/each}}
+      </ul>
+    </div>
+    <p class="viewAll">View All</p>
+  </div>
+</div>
+<div class="newsletter-container">
+  <h2>Sign up for our newsletter</h2>
+  <form>
+    <input type="text">
+    <button type="submit">Sign Up</button>
+  </form>
 </div>
