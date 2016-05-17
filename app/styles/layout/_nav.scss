@@ -1,5 +1,9 @@
  //This files contains any navigation styles
 
+#logo {
+  @include size(50px);
+}
+
 #logo, #menu-btn {
   h2 {
     margin: 0;
@@ -57,11 +61,11 @@
   @include size(40px 40px);
   @include flex(flex, $justify: space-around, $align-items: center);
   flex-wrap: wrap;
-  padding: .4em;
+  padding: .6em;
   cursor: pointer;
-  border-radius: 15%;
   .iconbar {
     @include size(30px 3px);
-    background-color: $primaryDark;
+    border-radius: 25px;
+    background-color: $primaryLight;
   }
 }

@@ -1,6 +1,8 @@
 <div class="siteHeader">
   <div class="container">
-    {{#link-to 'index'}}<h2 id="logo"> </h2>{{/link-to}}
+    {{#link-to 'index'}}
+      <img id="logo" src="/img/logo.png" alt="pARTicipate Logo" />
+    {{/link-to}}
     <button id="menu-btn" {{action 'menuPressed'}}>
       <div class="navIcon">
         <div class="iconbar"></div>
@@ -13,7 +15,6 @@
 <nav class="mainNav-closed" id="mainNav">
   <p class="closing-X" {{action 'closeMenu'}}>X</p>
   <div class="nav-list">
-    <h2 {{action 'itemClicked'}}>{{#link-to 'index'}}Home{{/link-to}}</h2>
     <h2 {{action 'itemClicked'}}>Upcoming Projects</h2>
     <h2 {{action 'itemClicked'}}>Finished Projects</h2>
     <h2 {{action 'itemClicked'}}>{{#link-to 'about'}}About{{/link-to}}</h2>

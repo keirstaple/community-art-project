@@ -3,11 +3,23 @@
 // -----------------------------------------------------------------------------
 
 .footer {
-  margin: 5% auto;
-  hr {
-    width: 600px;
+  margin: 10% auto;
+  @extend %centeredText;
+  p {
+    margin-bottom: 5px;
   }
-  color: white;
-  text-align: center;
-  letter-spacing: 1px;
+  .subtext {
+    @include text(8px);
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.social-icons {
+  margin: 0 auto 8% auto;
+  @include flex($justify: space-between);
+  width: 65%;
+  img {
+    @include size(38px);
+  }
 }
