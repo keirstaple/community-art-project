@@ -10,6 +10,8 @@ h2 {
 }
 
 h3 {
-  @extend %headerFont;
+  @extend %bodyFont;
   @extend %uppercase;
+  @include text(22px, $letter-spacing: 1px);
+  color: $primaryDark;
 }

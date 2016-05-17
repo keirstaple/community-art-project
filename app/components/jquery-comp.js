@@ -9,6 +9,10 @@ export default Ember.Component.extend({
     closeMenu: function(){
       $('nav').addClass("mainNav-closed");
       $('nav').removeClass("mainNav-opened");
+    },
+    itemClicked: function(){
+      $('#mainNav').removeClass("mainNav-opened");
+      $('#mainNav').addClass("mainNav-closed");
     }
   }
 });
