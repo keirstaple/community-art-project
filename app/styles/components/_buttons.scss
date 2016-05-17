@@ -20,3 +20,8 @@
   width: 60%;
   margin: 0 auto;
 }
+
+.down-arrow-icon {
+  @include size(46px);
+  margin-bottom: 25px;
+}

@@ -1,19 +1,23 @@
 <div class="homeHeader">
   <h1>pARTicipate</h1>
+  {{#scroll-to href='#homepage-content'}}
+    <img class="down-arrow-icon" src="/img/down-chevron.png" alt="down arrow icon" />
+  {{/scroll-to}}
 </div>
 <div class="container">
-  <br>
-  {{new-project save="save"}}
-  <div class="projectFeed">
-    <h3>Upcoming Art Projects</h3>
-    <hr>
-    <ul>
-      {{#each model as |project|}}
+  <div id="homepage-content">
+    {{new-project save="save"}}
+    <div class="projectFeed">
+      <h3>Upcoming Art Projects</h3>
+      <hr>
+      <ul>
+        {{#each model as |project|}}
         {{project-tile project=project}}
-      {{/each}}
-    </ul>
+        {{/each}}
+      </ul>
+    </div>
+    <p class="viewAll">View All</p>
   </div>
-  <p class="viewAll">View All</p>
 </div>
 <div class="newsletter-container">
   <h2>Sign up for our newsletter</h2>
