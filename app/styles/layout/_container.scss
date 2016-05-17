@@ -7,19 +7,40 @@
   margin: 0 auto;
 }
 
-.page-content {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  transition: transform 0.2s ease-out;
-  -webkit-transition: -webkit-transform 0.2s ease-out;
-}
-
-.shifted.page-content {
-  transform: translateX(70%);
-  -webkit-transform: translateX(70%);
-  overflow: hidden;
-  pointer-events: none;
+.newsletter-container {
+  background-image: linear-gradient(to bottom, rgba($teal,0.76),rgba($teal,0.76)) , url("/img/girl-brick-art.png");
+  background-size: cover;
+  height: 50vh;
+  padding-top: 100px;
+  margin-top: 20px;
+  h2 {
+    @extend %centeredText;
+    color: $primaryLight;
+    @include text($letter-spacing: 1px);
+    text-shadow: 1px 1px 1px $primaryDark;
+    padding-bottom: 25px;
+  }
+  form {
+    @include flex($direction: column);
+    input {
+      width: 80%;
+      margin: 0 auto;
+      background-color: rgba(255,255,255,0.6);
+      border: none;
+      height: 30px;
+    }
+    button {
+      border: 1px solid white;
+      padding: 1.5%;
+      width: 35%;
+      display: block;
+      margin: 15px auto 0 auto;
+      @extend %headerFont;
+      @extend %uppercase;
+      background-color: white;
+      border-radius: 5px;
+      font-size: 18px;
+      color: $teal;
+    }
+  }
 }
