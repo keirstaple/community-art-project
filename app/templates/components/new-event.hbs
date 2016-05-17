@@ -1,1 +1,34 @@
-{{yield}}
+{{#if addNewEvent}}
+<h1>New Event</h1>
+<div>
+<form>
+  <div class="form-group">
+    <label for="title">Event Title</label>
+    {{input value=title id="title"}}
+  </div>
+  <div class="form-group">
+    <label for="artist">Artist Name</label>
+    {{input value=artist id="artist"}}
+  </div>
+
+  <div class="form-group">
+    <label for="image">Image URL</label>
+    {{input value=image id="image"}}
+  </div>
+
+  <div class="form-group">
+    <label for="location">Location</label>
+    {{input value=location id="location"}}
+  </div>
+
+  <div class="form-group">
+    <label for="date">Event Date</label>
+    {{input value=date id="date"}}
+  </div>
+
+  <button {{action 'save1'}}>Save</button>
+</form>
+</div>
+{{else}}
+<button {{action 'eventFormShow'}}>New Event</button>
+{{/if}}
