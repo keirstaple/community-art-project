@@ -27,7 +27,14 @@
       margin: 0 auto;
       background-color: rgba(255,255,255,0.6);
       border: none;
-      height: 30px;
+      height: 40px;
+      font-size: 18px;
+      padding-left: 10px;
+      @extend %bodyFont;
+      @extend %centeredText;
+      &:focus {
+        outline: none;
+      }
     }
     button {
       border: 1px solid white;
