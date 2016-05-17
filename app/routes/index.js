@@ -11,5 +11,9 @@ export default Ember.Route.extend({
       newProject.save();
       this.transitionTo('index');
     },
+    destroyProject(project) {
+      project.destroyRecord();
+      this.transitionTo('index');
+    }
   }
 });
