@@ -5,10 +5,13 @@
   <br>
   {{new-project save="save"}}
   <div class="projectFeed">
+    <h3>Upcoming Art Projects</h3>
+    <hr>
     <ul>
       {{#each model as |project|}}
         {{project-tile project=project}}
       {{/each}}
     </ul>
   </div>
+  <p class="viewAll">View All</p>
 </div>

@@ -10,3 +10,13 @@
   display: block;
   margin: 0 auto;
 }
+
+.viewAll {
+  @extend %headerFont;
+  @extend %uppercase;
+  border: 3px solid $pink;
+  @extend %centeredText;
+  padding: 5px 0px;
+  width: 60%;
+  margin: 0 auto;
+}
