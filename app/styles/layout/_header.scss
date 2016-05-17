@@ -1,13 +1,23 @@
 // All header styling for the site
 
 .siteHeader {
-  @include flex($justify: space-between, $align-items: center);
-  padding: 10px 0;
+  // background: $teal;
+  // background: linear-gradient(to right, rgba($teal,0.5),rgba($teal,0.5));
+  .container {
+    @include flex($justify: space-between, $align-items: center);
+    padding: 10px 0;
+  }
 }
 
 .homeHeader {
-  background-image: linear-gradient(to right, rgba($teal,0.5),rgba($teal,0.5)) , url("/img/building-painting.jpg");
+  background-image: linear-gradient(to bottom, rgba($teal,0.8),rgba($teal,0.3)) , url("/img/building-painting.jpg");
   background-size: cover;
   background-position: center;
   height: 60vh;
+  @include flex($justify:center, $align-items: center);
+  h1 {
+    color: $primaryLight;
+    @include text(3em, $weight: lighter);
+    text-shadow: 1px 1px 1px rgba($primaryDark, 0.5);
+  }
 }

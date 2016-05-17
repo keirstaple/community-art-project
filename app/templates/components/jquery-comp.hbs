@@ -1,12 +1,14 @@
 <div class="siteHeader">
-  {{#link-to 'index'}}<h2 id="logo">pARTicipate</h2>{{/link-to}}
-  <button id="menu-btn" {{action 'menuPressed'}}>
-    <div class="navIcon">
-      <div class="iconbar"></div>
-      <div class="iconbar"></div>
-      <div class="iconbar"></div>
-    </div>
-  </button>
+  <div class="container">
+    {{#link-to 'index'}}<h2 id="logo">pARTicipate</h2>{{/link-to}}
+    <button id="menu-btn" {{action 'menuPressed'}}>
+      <div class="navIcon">
+        <div class="iconbar"></div>
+        <div class="iconbar"></div>
+        <div class="iconbar"></div>
+      </div>
+    </button>
+  </div>
 </div>
 <nav class="mainNav-closed">
   <p class="closing-X" {{action 'closeMenu'}}>X</p>
