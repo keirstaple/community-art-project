@@ -1,5 +1,7 @@
 <!-- {{yield}} -->
 <div class="projectTile">
-  <h2>{{project.title}}</h2>
-  <img src="{{project.image}}" alt="{{project.title}}">
+  {{#link-to 'project' project.id}}
+    <h2>{{project.title}}</h2>
+    <img src="{{project.image}}" alt="{{project.title}}">
+  {{/link-to}}
 </div>
