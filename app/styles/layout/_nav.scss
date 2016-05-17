@@ -1,0 +1,58 @@
+ //This files contains any navigation styles
+
+.mainNav-closed {
+  background-color: $teal;
+  color: $primaryLight;
+  position: absolute;
+  height: 100vh;
+  top: 0px;
+  left: 500px;
+  width: 70%;
+  overflow: auto;
+  transition: all 300ms linear;
+}
+
+.mainNav-opened {
+  background-color: $teal;
+  color: $primaryLight;
+  box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 80%;
+  height: 100vh;
+  overflow: auto;
+  transition: all 300ms linear;
+}
+
+.mainNav-opened, .mainNav-closed {
+  .nav-list {
+    margin: 100px 0px 0px 20px;
+    h2 {
+      @include text($weight: lighter, $l-height: 40px, $letter-spacing: 1px);
+    }
+  }
+}
+
+.closing-X {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  @include text(2em, $weight: lighter);
+}
+
+.navIcon {
+  @include size(40px 40px);
+  @include flex(flex, $justify: space-around, $align-items: center);
+  flex-wrap: wrap;
+  padding: .4em;
+  cursor: pointer;
+  border-radius: 15%;
+  .iconbar {
+    @include size(30px 3px);
+    background-color: $primaryDark;
+  }
+}

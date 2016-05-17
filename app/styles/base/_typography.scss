@@ -1,0 +1,15 @@
+// This file contains global typography styles.
+
+h1 {
+  @extend %headerFont;
+}
+
+h2 {
+  @extend %headerFont;
+  margin: 0;
+}
+
+h3 {
+  @extend %headerFont;
+  @extend %uppercase;
+}
