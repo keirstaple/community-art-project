@@ -9,7 +9,7 @@ export default Ember.Component.extend({
      save() {
        var params = {
          title: this.get('title'),
-         host: this.get('host'),
+         host_name: this.get('host'),
          date: this.get('date'),
          time: this.get('time'),
          location: this.get('location'),
