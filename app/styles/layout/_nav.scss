@@ -1,0 +1,46 @@
+ //This files contains any navigation styles
+
+.mainNav-closed {
+  background-color: tomato;
+  position: absolute;
+  left: 500px;
+  width: 70%;
+  overflow: auto;
+  transition: all 300ms linear;
+}
+
+.mainNav-opened {
+  background-color: tomato;
+  box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 80%;
+  height: 100vh;
+  overflow: auto;
+  transition: all 300ms linear;
+}
+
+.closing-X {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  @include text(2em, $weight: lighter);
+}
+
+.navIcon {
+  z-index: 1;
+  @include size(40px 40px);
+  @include flex(flex, $justify: space-around, $align-items: center);
+  flex-wrap: wrap;
+  padding: .4em;
+  cursor: pointer;
+  border-radius: 15%;
+  .iconbar {
+    @include size(30px 3px);
+    background-color: $primaryDark;
+  }
+}

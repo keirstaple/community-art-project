@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.adminButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.shortBtn {
+  max-height: 20px;
+}
