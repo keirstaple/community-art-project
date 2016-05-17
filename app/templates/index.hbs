@@ -1,14 +1,3 @@
-{{outlet}}
-<div class="container">
-  <br>
-  {{new-project save="save"}}
-  <div class="projectFeed">
-    <!-- {{display-favorites}} -->
-    <ul>
-      {{#each model.project as |project|}}
-        {{project-tile project=project destroyProject="destroyProject"}}
-        <!-- <button {{action 'addToFavorites' restaurant}}>Favorite</button> -->
-      {{/each}}
-    </ul>
-  </div>
-</div>
+<h1>pARTicipate</h1>
+
+{{#link-to 'about'}}About{{/link-to}}
