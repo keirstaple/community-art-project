@@ -6,14 +6,20 @@
         <label for="title">Project Title</label>
         {{input value=title id="title"}}
       </div>
+
       <div class="form-group">
-        <label for="artist">Artist Name</label>
-        {{input value=artist id="artist"}}
+        <label for="host">Host Name</label>
+        {{input value=host id="host"}}
       </div>
 
       <div class="form-group">
-        <label for="image">Image URL</label>
-        {{input value=image id="image"}}
+        <label for="date">Project Date</label>
+        {{input value=date id="date"}}
+      </div>
+
+      <div class="form-group">
+        <label for="time">Project Time</label>
+        {{input value=time id="time"}}
       </div>
 
       <div class="form-group">
@@ -22,11 +28,20 @@
       </div>
 
       <div class="form-group">
-        <label for="date">Project Date</label>
-        {{input value=date id="date"}}
+        <label for="contributor">Number of Contributors Needed</label>
+        {{input value=contributor id="contributor"}}
       </div>
 
-      <button {{action 'save1'}}>Save</button>
+      <div class="form-group">
+        <label for="summary">Provide a Project Summary and Any Important Details</label>
+        {{input value=summary id="summary"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image"}}
+      </div>
+      <button {{action 'save'}}>Save</button>
     </form>
   </div>
 {{else}}

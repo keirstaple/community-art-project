@@ -6,16 +6,19 @@ export default Ember.Component.extend({
      projectFormShow() {
        this.set('addNewProject', true);
      },
-     save1() {
+     save() {
        var params = {
          title: this.get('title'),
-         artist: this.get('artist'),
-         image: this.get('image'),
-         location: this.get('location'),
+         host: this.get('host'),
          date: this.get('date'),
+         time: this.get('time'),
+         location: this.get('location'),
+         contributor: this.get('contributor'),
+         summary: this.get('summary'),
+         image: this.get('image')
        };
        this.set('addNewProject', false);
-       this.sendAction('save2', params);
+       this.sendAction('save', params);
      }
    }
 });
