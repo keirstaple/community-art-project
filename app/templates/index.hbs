@@ -8,8 +8,8 @@
   {{new-project save="save"}}
   <div class="projectFeed">
     <ul>
-      {{#each model.project as |project|}}
-        {{project-tile project=project destroyProject="destroyProject"}}
+      {{#each model as |project|}}
+        {{project-tile project=project}}
       {{/each}}
     </ul>
   </div>
