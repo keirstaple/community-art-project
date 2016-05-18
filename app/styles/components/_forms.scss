@@ -1,0 +1,36 @@
+.contact-form {
+  h1 {
+    text-align: center;
+  }
+  .form-group {
+    margin: 18px 0;
+  }
+  label {
+    font-style: italic;
+    text-align: center;
+    align-self: center;
+  }
+  input, {
+    display: flex;
+    align-self: center;
+    width: 40vw;
+    height: 24px;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.30);
+
+  }
+  textarea {
+    align-self: center;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.50);
+    width: 60vw;
+  }
+  .description {
+    text-align: center;
+    align-self: center;
+  }
+  button {
+    background-color: $teal;
+    margin-bottom: 12px;
+
+
+  }
+}

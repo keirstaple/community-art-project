@@ -55,3 +55,126 @@
 #homepage-content {
   padding-top: 25px;
 }
+
+.contactHeader {
+  background-image: url("/img/contact-background.png");
+  background-size: cover;
+  height: 80vh;
+  padding-top: 100px;
+  h1 {
+    color: $primaryLight;
+    @include text(4em, $weight: lighter, $letter-spacing: 2px);
+    text-shadow: 0px 2px 4px rgba(74,73,74,0.62);
+    text-align: center;
+    margin-top: 100px;
+  }
+  img {
+  margin-left: 188px;
+
+  }
+}
+
+.contact-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.contact-content {
+  h3 {
+    align-self: center;
+    text-align: center;
+    width: 50vw;
+    margin-left: 10vw;
+  }
+  hr {
+    width: 70vw;
+    border: 1px solid $teal;
+    margin-bottom: 35px;
+  }
+  h4 {
+    text-align: center;
+  }
+}
+
+.mapItem {
+  .mapborderbox1 {
+    border: 1px solid $pink;
+    width: 292px;
+    height: 282px;
+  }
+
+  .mapborderbox2 {
+    border: 1px solid $pink;
+    width: 292px;
+    height: 282px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  img {
+    height: 100%;
+    padding: 20px 10px 10px 20px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+  }
+}
+.contact-links {
+  .address {
+    text-align: center;
+    margin: 30px 0;
+  }
+  hr {
+    width: 70vw;
+    border: 1px solid $yellow;
+    margin-bottom: 35px;
+  }
+  p {
+    text-align: center;
+  }
+  .borderbox {
+    width: 203px;
+    height: 50px;
+    border: 1px solid $teal;
+    margin-left: 10vw;
+    margin-bottom: 35px;
+  }
+  .contact-link {
+    display: flex;
+    justify-content: center;
+    border: 2px solid $pink;
+    // width: 60vw;
+
+  }
+}
+
+.aboutHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;;
+  background-image: url("/img/tree-yarn.jpg"); 
+  background-size: cover;
+  height: 80vh;
+  padding-top: 100px;
+  .header-text {
+    h1 {
+      color: $primaryLight;
+      @include text(4em, $weight: lighter, $letter-spacing: 2px);
+      text-shadow: 0px 2px 4px rgba(74,73,74,0.62);
+      text-align: center;
+      margin-top: 100px;
+    }
+  }
+  .down-arrow-icon {
+    margin-left: 46vw;
+  }
+}
+.aboutContent {
+  margin: 0 40px;
+  p {
+    text-align: center;
+    letter-spacing: 1.21px;
+    padding: 10px;
+    line-height: 24px;
+  }
+}

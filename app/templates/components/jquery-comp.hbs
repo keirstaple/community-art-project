@@ -16,7 +16,9 @@
   <p class="closing-X" {{action 'closeMenu'}}>X</p>
   <div class="nav-list">
     <h2 {{action 'itemClicked'}}>Upcoming Projects</h2>
-    <h2 {{action 'itemClicked'}}>Finished Projects</h2>
+    <h2 {{action 'itemClicked'}}>{{#link-to 'completed-projects'}}Completed Projects{{/link-to}}</h2>
     <h2 {{action 'itemClicked'}}>{{#link-to 'about'}}About{{/link-to}}</h2>
+    <h2 {{action 'itemClicked'}}>{{#link-to 'contact'}}Contact Us{{/link-to}}</h2>
+
   </div>
 </nav>
