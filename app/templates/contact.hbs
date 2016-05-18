@@ -1,14 +1,44 @@
-<p>pARTicipate would love to help you choose a find or post your next community based art project.</p>
-
-<p>Contact us today!</p>
-{{contact-us}}
-
-<p>
-  pARTicipate<br>
-  1221 SW 4th Avenue<br>
-  Portland, OR 97204
-</p>
-
-<p>(503) 823-4000</p>
-
-<p>cityinfo@portlandoregon.gov</p>
+<div class="contactHeader">
+  <div class="header-text">
+    <h1>contAcT</h1>
+  </div>
+  {{#scroll-to href='#contact-content'}}
+    <img class="down-arrow-icon" src="/img/down-chevron.png" alt="down arrow icon" />
+  {{/scroll-to}}
+</div>
+<div class="contact-container">
+  <div class="contact-content">
+    <h3>WE'D LOVE TO HEAR FROM YOU!</h3>
+    <hr>
+    <h4>Say hi in person at:</h4>
+    <div class="mapItem">
+      <div class="mapborderbox1">
+        <div class="mapborderbox2">
+          <img src="/img/map.png" alt="map" />
+        </div>
+      </div>
+      <div class="contact-links">
+        <p class="address">
+          1221 SW 4th Avenue<br>
+          Portland, OR 97204
+        </p>
+        <hr>
+        <p>Give us a call at:</p>
+        <div class="borderbox">
+          <p>(503) 823-4000</p>
+        </div>
+        <hr>
+        <p>Send us your thoughts:</p>
+         <div class="contact-link">{{contact-us}}
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="newsletter-container">
+  <h2>Sign up for our newsletter</h2>
+  <form>
+    <input type="text">
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
