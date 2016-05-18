@@ -152,7 +152,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;;
-  background-image: url("/img/tree-yarn.jpg"); 
+  background-image: url("/img/tree-yarn.jpg");
   background-size: cover;
   height: 80vh;
   padding-top: 100px;
@@ -178,3 +178,103 @@
     line-height: 24px;
   }
 }
+
+// Project Detail Content
+
+#portfolio-detail-content {
+  h3, p {
+    @extend %centeredText;
+  }
+  .goal {
+    margin-bottom: 50px;
+    hr {
+      border: 1px solid $teal;
+      margin-bottom: 20px;
+    }
+    .goal-content {
+      @include flex($direction: column, $justify: center);
+      padding: 10px 20px;
+    }
+    .box1 {
+      height: 230px;
+      border: 1px solid $teal;
+    }
+    .box2 {
+      height: 230px;
+      border: 1px solid $pink;
+    }
+  }
+  .helpers {
+    border: 1px solid $pink;
+    padding: 15px;
+    hr {
+      border: 1px solid $teal;
+      margin-bottom: 0px;
+    }
+    .vertical-line {
+      width: 1px;
+      height: 100px;
+      margin-top: 0px;
+    }
+    .helper-content {
+      @include flex();
+      width: 70%;
+      margin: 0 auto;
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+  .time-location {
+    margin-top: 30px;
+    width: 95%;
+    margin: 0 auto;
+    hr {
+      border: 1px solid $yellow;
+    }
+    p {
+      @extend %headerFont;
+    }
+    .time-content {
+      line-height: 20px;
+    }
+    .map-container {
+      margin-bottom: 30px;
+    }
+    .map {
+      background-image: url("/img/map.png");
+      background-repeat: no-repeat;
+      @include size(250px);
+      margin: 15px auto 0 auto;
+    }
+    .box1 {
+      border: 1px solid $teal;
+      height: 280px;
+    }
+    .box2 {
+      border: 1px solid $teal;
+      height: 280px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

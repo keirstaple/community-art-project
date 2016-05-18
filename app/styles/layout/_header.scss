@@ -30,3 +30,15 @@
     @include text($weight: lighter, $letter-spacing: 1px);
   }
 }
+
+.project-detail-header {
+  @include flex($direction: column, $justify: center, $align-items: center);
+  height: 90vh;
+  h1 {
+    color: $primaryLight;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+    font-size: 4em;
+    @extend %centeredText;
+    width: 80%;
+  }
+}
