@@ -30,3 +30,13 @@
   border: 1px solid $primaryDark;
   background-color: white;
 }
+
+.uncompletedBtn {
+  border: 1px solid $primaryDark;
+  background-color: white;
+}
+
+.completedBtn {
+  border: 1px solid green;
+  background-color: white;
+}

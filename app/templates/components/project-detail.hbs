@@ -8,10 +8,10 @@
     <h3>{{project.location}}</h3>
     <h3>We need {{project.contributor}} people</h3>
     <h3>{{project.summary}}</h3>
-    {{#if itemCompleted}}
-      <p>Project is Complete</p>
+    {{#if project.complete}}
+      <button class="completedBtn">Project Completed</button>
     {{else}}
-      <button class="defaultBtn" {{action 'completedProject' project.id}}>Mark as Completed</button>
+      <button class="uncompletedBtn" {{action 'completedProject' project.id}}>Mark as Completed</button>
     {{/if}}
     <h3><img src="{{project.image}}" alt="{{project.title}}" /></h3>
     <br>
