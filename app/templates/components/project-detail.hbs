@@ -8,7 +8,11 @@
     <h3>{{project.location}}</h3>
     <h3>We need {{project.contributor}} people</h3>
     <h3>{{project.summary}}</h3>
-    <button class="defaultBtn" {{action 'completedProject' project.id}}>This project is completed</button>
+    {{#if itemCompleted}}
+      <p>Project is Complete</p>
+    {{else}}
+      <button class="defaultBtn" {{action 'completedProject' project.id}}>Mark as Completed</button>
+    {{/if}}
     <h3><img src="{{project.image}}" alt="{{project.title}}" /></h3>
     <br>
     <button class="defaultBtn" {{action 'delete' project}}>Delete</button>
