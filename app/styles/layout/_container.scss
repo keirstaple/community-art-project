@@ -175,12 +175,13 @@
   margin-left: 6vw;
   h3 {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 45px;
+    margin-bottom: 5px;
   }
   hr {
     width: 70vw;
     border: 1px solid $teal;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
   .whoborderbox1 {
       border: 1px solid $teal;
@@ -194,12 +195,14 @@
   .pink {
     width: 70vw;
     border: 1px solid $pink;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+
   }
   .missionborderbox1 {
     border: 1px solid $pink;
     margin-left: 2vw;
     margin-bottom: 40px;
+    width: 350px;
   }
   .missionborderbox2 {
     border: 1px solid $pink;
@@ -212,6 +215,7 @@
     letter-spacing: 1.21px;
     padding: 10px;
     line-height: 24px;
+    padding: 20px;
   }
 }
 .aboutContent {
