@@ -25,3 +25,8 @@
   @include size(46px);
   margin-bottom: 25px;
 }
+
+.defaultBtn {
+  border: 1px solid $primaryDark;
+  background-color: white;
+}
