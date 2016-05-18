@@ -9,5 +9,6 @@ export default DS.Model.extend({
   contributor: DS.attr(),
   summary: DS.attr(),
   image: DS.attr(),
+  complete: DS.attr('boolean', {defaultValue: false}),
   comments: DS.hasMany('comment', {async: true})
 });
