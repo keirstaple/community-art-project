@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('project', {path:'/:project_id'});
   this.route('about');
   this.route('contact');
+  this.route('completed-projects');
 });
 
 export default Router;
