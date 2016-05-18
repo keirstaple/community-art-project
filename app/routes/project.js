@@ -9,6 +9,13 @@ export default Ember.Route.extend({
     destroyProject(project) {
       project.destroyRecord();
       this.transitionTo('index');
+    },
+    completedProject(complete){
+      console.log(complete);
+      this.store.findRecord('project', complete).then(function(project){
+        project.toggleProperty('complete');
+        project.save();
+      });
     }
   }
 });
