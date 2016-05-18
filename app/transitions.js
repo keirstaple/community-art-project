@@ -5,4 +5,4 @@ export default function(){
     this.use('fade'),
     this.reverse('fade')
   );
-};
+}
