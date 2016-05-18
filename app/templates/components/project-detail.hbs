@@ -48,8 +48,12 @@
     </div>
     <p>{{project.location}}</p>
   </div>
-  <h3>Host</h3>
-  <h4>{{project.host_name}}</h4>
+  <div class="host">
+    <h3>Host</h3>
+    <hr>
+    <img src="/img/host-image.jpg" alt="host image">
+    <p>{{project.host_name}}</p>
+  </div>
   {{#if project.complete}}
     <button class="completedBtn">Project Completed</button>
   {{else}}
