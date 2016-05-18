@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         description: this.get('description'),
       };
       this.set('addNewContact', false);
-      this.sendAction('save', params);
+      this.sendAction('save1', params);
     }
   }
 });

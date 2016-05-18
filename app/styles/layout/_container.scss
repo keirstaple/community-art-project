@@ -152,8 +152,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;;
-  background-image: url("/img/tree-yarn.jpg"); 
+  background-image: url("/img/tree-yarn.jpg");
   background-size: cover;
+  background-position: center;
   height: 80vh;
   padding-top: 100px;
   .header-text {
@@ -167,6 +168,50 @@
   }
   .down-arrow-icon {
     margin-left: 46vw;
+  }
+}
+.whoWeAre {
+  width: 88%;
+  margin-left: 6vw;
+  h3 {
+    text-align: center;
+    margin-top: 40px;
+  }
+  hr {
+    width: 70vw;
+    border: 1px solid $teal;
+    margin-bottom: 35px;
+  }
+  .whoborderbox1 {
+      border: 1px solid $teal;
+  }
+  .whoborderbox2 {
+    border: 1px solid $teal;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  .pink {
+    width: 70vw;
+    border: 1px solid $pink;
+    margin-bottom: 35px;
+  }
+  .missionborderbox1 {
+    border: 1px solid $pink;
+    margin-left: 2vw;
+    margin-bottom: 40px;
+  }
+  .missionborderbox2 {
+    border: 1px solid $pink;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  .missionstatment p {
+    text-align: center;
+    letter-spacing: 1.21px;
+    padding: 10px;
+    line-height: 24px;
   }
 }
 .aboutContent {
