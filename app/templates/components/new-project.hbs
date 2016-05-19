@@ -1,4 +1,5 @@
 {{#if addNewProject}}
+<div class="newProjectForm">
   <h1>New Project</h1>
   <div>
     <form>
@@ -45,6 +46,7 @@
       <button {{action 'cancelNewProjectForm'}}>Cancel</button>
     </form>
   </div>
+</div>
 {{else}}
   <button class="secondaryBtn"{{action 'projectFormShow'}}>New Project</button>
 {{/if}}

@@ -40,3 +40,34 @@
   border: 1px solid green;
   background-color: white;
 }
+
+.portfolio-detail-content {
+  .completedBtn {
+    border: 2px solid $teal;
+    background-color: $teal;
+    color: $primaryLight;
+    width: 90%;
+    padding: 15px;
+    @extend %centeredText;
+    @extend %headerFont;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+  }
+  .uncompletedBtn {
+    border: 2px solid $teal;
+    background-color: $primaryLight;
+    color: $primaryDark;
+    width: 90%;
+    padding: 15px;
+    @extend %centeredText;
+    @extend %headerFont;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+  }
+  .defaultBtn {
+    display: block;
+    margin: 0 auto;
+  }
+}
