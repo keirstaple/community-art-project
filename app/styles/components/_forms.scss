@@ -34,3 +34,14 @@
     margin-bottom: 12px;
   }
 }
+
+.newProjectForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  label {
+    text-align: center;
+    margin: 8px;
+  }
+
+}
