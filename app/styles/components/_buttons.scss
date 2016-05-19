@@ -51,6 +51,8 @@
 .defaultBtn {
   border: 1px solid $primaryDark;
   background-color: white;
+  @extend %bodyFont;
+  padding: 3px 5px;
 }
 
 .uncompletedBtn {
