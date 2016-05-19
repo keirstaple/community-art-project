@@ -64,6 +64,7 @@
   h1 {
     color: $primaryLight;
     @include text(4em, $weight: lighter, $letter-spacing: 2px);
+    font-family: 'Fjalla One', sans-serif;
     text-shadow: 0px 2px 4px rgba(74,73,74,0.62);
     text-align: center;
     margin-top: 100px;
@@ -133,11 +134,19 @@
     text-align: center;
   }
   .borderbox {
+    display: flex;
+    justify-content: center;
     width: 203px;
     height: 50px;
     border: 1px solid $teal;
     margin-left: 10vw;
     margin-bottom: 35px;
+    p {
+      align-self: center;
+      font-family: DroidSans-Bold;
+      font-size: 26px;
+      letter-spacing: 0.54px;
+    }
   }
   .contact-link {
     display: flex;
@@ -154,19 +163,69 @@
   justify-content: space-around;;
   background-image: url("/img/tree-yarn.jpg");
   background-size: cover;
+  background-position: center;
   height: 80vh;
   padding-top: 100px;
   .header-text {
     h1 {
       color: $primaryLight;
       @include text(4em, $weight: lighter, $letter-spacing: 2px);
+      font-family: 'Fjalla One', sans-serif;
       text-shadow: 0px 2px 4px rgba(74,73,74,0.62);
       text-align: center;
-      margin-top: 100px;
+      margin-top: 180px;
     }
   }
   .down-arrow-icon {
     margin-left: 46vw;
+  }
+}
+.whoWeAre {
+  width: 88%;
+  margin-left: 6vw;
+  h3 {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 5px;
+  }
+  hr {
+    width: 70vw;
+    border: 1px solid $teal;
+    margin-bottom: 30px;
+  }
+  .whoborderbox1 {
+      border: 1px solid $teal;
+  }
+  .whoborderbox2 {
+    border: 1px solid $teal;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  .pink {
+    width: 70vw;
+    border: 1px solid $pink;
+    margin-bottom: 30px;
+
+  }
+  .missionborderbox1 {
+    border: 1px solid $pink;
+    margin-left: 2vw;
+    margin-bottom: 40px;
+    width: 350px;
+  }
+  .missionborderbox2 {
+    border: 1px solid $pink;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  .missionstatment p {
+    text-align: center;
+    letter-spacing: 1.21px;
+    padding: 10px;
+    line-height: 24px;
+    padding: 20px;
   }
 }
 .aboutContent {

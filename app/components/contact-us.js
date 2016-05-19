@@ -6,15 +6,16 @@ export default Ember.Component.extend({
     contactFormShow() {
       this.set('addNewContact', true);
     },
-    save() {
-      var params = {
-        first: this.get('first'),
-        last: this.get('last'),
-        email: this.get('last'),
-        description: this.get('description'),
-      };
+    save1() {
+      // var params = {
+      //   first: this.get('first'),
+      //   last: this.get('last'),
+      //   email: this.get('last'),
+      //   description: this.get('description'),
+      // };
       this.set('addNewContact', false);
-      this.sendAction('save', params);
+      // this.sendAction('save1', params);
+      this.transitionTo('contact');
     }
   }
 });
