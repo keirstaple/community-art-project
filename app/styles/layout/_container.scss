@@ -237,3 +237,149 @@
     line-height: 24px;
   }
 }
+
+// Project Detail Content
+
+#portfolio-detail-content {
+  h3, p {
+    @extend %centeredText;
+  }
+  .goal {
+    margin-bottom: 60px;
+    hr {
+      border: 1px solid $teal;
+      margin-bottom: 20px;
+    }
+    .goal-content {
+      @include flex($direction: column, $justify: center);
+      padding: 10px 20px;
+    }
+    .box1 {
+      height: 230px;
+      border: 1px solid $teal;
+    }
+    .box2 {
+      height: 230px;
+      border: 1px solid $pink;
+    }
+  }
+  .helpers {
+    border: 1px solid $pink;
+    padding: 15px;
+    margin-bottom: 50px;
+    hr {
+      border: 1px solid $teal;
+      margin-bottom: 0px;
+    }
+    .vertical-line {
+      width: 1px;
+      height: 100px;
+      margin-top: 0px;
+    }
+    .helper-content {
+      @include flex();
+      width: 70%;
+      margin: 0 auto;
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+  .time-location {
+    margin-top: 50px;
+    width: 95%;
+    margin: 0 auto;
+    hr {
+      border: 1px solid $yellow;
+    }
+    p {
+      @extend %headerFont;
+    }
+    .time-content {
+      line-height: 20px;
+    }
+    .map-container {
+      margin-bottom: 30px;
+    }
+    .map {
+      background-image: url("/img/map.png");
+      background-repeat: no-repeat;
+      @include size(250px);
+      margin: 15px auto 0 auto;
+    }
+    .box1 {
+      border: 1px solid $teal;
+      height: 280px;
+    }
+    .box2 {
+      border: 1px solid $teal;
+      height: 280px;
+    }
+  }
+  .host {
+    margin-top: 50px;
+    hr {
+      border: 1px solid $teal;
+      margin-bottom: 20px;
+    }
+    p {
+      @extend %headerFont;
+      @extend %centeredText;
+    }
+    img {
+      @include size(100px);
+      border-radius: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .completedBtn {
+    border: 2px solid $teal;
+    background-color: $teal;
+    color: $primaryLight;
+    width: 90%;
+    padding: 15px;
+    @extend %centeredText;
+    @extend %headerFont;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+  }
+  .uncompletedBtn {
+    border: 2px solid $teal;
+    background-color: $primaryLight;
+    color: $primaryDark;
+    width: 90%;
+    padding: 15px;
+    @extend %centeredText;
+    @extend %headerFont;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+  }
+  .defaultBtn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
