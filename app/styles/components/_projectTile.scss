@@ -1,7 +1,7 @@
 .projectItem {
-  margin-bottom: 50px;
-
+  padding-bottom: 40px;
 }
+
 .projectTile {
   margin-left: 10px;
   background-repeat: no-repeat;
@@ -33,6 +33,31 @@
   position: relative;
   top: 10px;
   left: 10px;
+}
+
+.projectTiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .projectItem {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 80vw;
+    .box1 {
+      border: 1px solid $teal;
+      height: 150px;
+      width: 100%;
+    }
+    .box2 {
+      border: 1px solid $teal;
+      height: 150px;
+      position: relative;
+      top: 10px;
+      left: 10px;
+      padding-right: 10px;
+    }
+  }
 }
 
 .projectFeed {

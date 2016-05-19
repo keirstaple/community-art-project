@@ -4,61 +4,63 @@
     <img class="down-arrow-icon" src="/img/down-chevron.png" alt="down arrow icon" />
   {{/scroll-to}}
 </div>
-<div class="container" id="portfolio-detail-content">
-  <div class="goal">
-    <h3>Goal</h3>
-    <hr>
-    <div class="box1">
-      <div class="box2">
-        <div class="goal-content">
-          <p>{{project.summary}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="helpers">
-    <h3>Helpers</h3>
-    <hr>
-    <div class="helper-content">
-      <div class="wanted">
-        <p>Wanted</p>
-        <p>{{project.contributor}}</p>
-      </div>
-      <hr class="vertical-line">
-      <div class="needed">
-        <p>Needed</p>
-        <p>3</p>
-      </div>
-    </div>
-  </div>
-  <div class="time-location">
-    <h3>When &amp; Where</h3>
-    <hr>
-    <div class="time-content">
-      <p>{{project.date}}<br>
-        {{project.time}}</p>
-    </div>
-    <div class="map-container">
+<div class="portfolio-detail-content">
+  <div class="container" id="portfolio-detail-content">
+    <div class="goal">
+      <h3>Goal</h3>
+      <hr>
       <div class="box1">
         <div class="box2">
-          <div class="map"></div>
+          <div class="goal-content">
+            <p>{{project.summary}}</p>
+          </div>
         </div>
       </div>
     </div>
-    <p>{{project.location}}</p>
+    <div class="helpers">
+      <h3>Helpers</h3>
+      <hr>
+      <div class="helper-content">
+        <div class="wanted">
+          <p>Wanted</p>
+          <p>{{project.contributor}}</p>
+        </div>
+        <hr class="vertical-line">
+        <div class="needed">
+          <p>Needed</p>
+          <p>3</p>
+        </div>
+      </div>
+    </div>
+    <div class="time-location">
+      <h3>When &amp; Where</h3>
+      <hr>
+      <div class="time-content">
+        <p>{{project.date}}<br>
+          {{project.time}}</p>
+        </div>
+        <div class="map-container">
+          <div class="box1">
+            <div class="box2">
+              <div class="map"></div>
+            </div>
+          </div>
+        </div>
+        <p>{{project.location}}</p>
+      </div>
+      <div class="host">
+        <h3>Host</h3>
+        <hr>
+        <img src="/img/host-image.jpg" alt="host image">
+        <p>{{project.host_name}}</p>
+      </div>
+      {{#if project.complete}}
+      <button class="completedBtn">Project Completed</button>
+      {{else}}
+      <button class="uncompletedBtn" {{action 'completedProject' project.id}}>Mark as Completed</button>
+      {{/if}}
+      <br>
+      <p>Are you the host of this event?</p>
+      <button class="defaultBtn" {{action 'delete' project}}>Delete</button>
+    </div>
   </div>
-  <div class="host">
-    <h3>Host</h3>
-    <hr>
-    <img src="/img/host-image.jpg" alt="host image">
-    <p>{{project.host_name}}</p>
-  </div>
-  {{#if project.complete}}
-    <button class="completedBtn">Project Completed</button>
-  {{else}}
-    <button class="uncompletedBtn" {{action 'completedProject' project.id}}>Mark as Completed</button>
-  {{/if}}
-  <br>
-  <p>Are you the host of this event?</p>
-  <button class="defaultBtn" {{action 'delete' project}}>Delete</button>
-</div>

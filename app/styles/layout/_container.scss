@@ -78,111 +78,89 @@
 .contact-container {
   width: 100vw;
   display: flex;
-  justify-content: center;
-}
-.contact-content {
-  h3 {
-    align-self: center;
-    text-align: center;
-    width: 50vw;
-    margin-left: 10vw;
-  }
-  hr {
-    width: 70vw;
-    border: 1px solid $teal;
-    margin-bottom: 35px;
-  }
-  h4 {
-    text-align: center;
-  }
-}
-
-.mapItem {
-  .mapborderbox1 {
-    border: 1px solid $pink;
-    width: 292px;
-    height: 282px;
-  }
-
-  .mapborderbox2 {
-    border: 1px solid $pink;
-    width: 292px;
-    height: 282px;
-    position: relative;
-    top: 10px;
-    left: 10px;
-  }
-  img {
-    height: 100%;
-    padding: 20px 10px 10px 20px;
-    position: relative;
-    top: -10px;
-    left: -10px;
-  }
-}
-.contact-links {
-  .address {
-    text-align: center;
-    margin: 30px 0;
-  }
-  hr {
-    width: 70vw;
-    border: 1px solid $yellow;
-    margin-bottom: 35px;
-  }
-  p {
-    text-align: center;
-  }
-  .borderbox {
-    display: flex;
-    justify-content: center;
-    width: 203px;
-    height: 50px;
-    border: 1px solid $teal;
-    margin-left: 10vw;
-    margin-bottom: 35px;
-    p {
+  flex-direction: column;
+  align-items: center;
+  .contact-content {
+    h3 {
       align-self: center;
-      font-family: DroidSans-Bold;
-      font-size: 26px;
-      letter-spacing: 0.54px;
+      text-align: center;
+      width: 50vw;
+      margin-left: 10vw;
+    }
+    hr {
+      width: 70vw;
+      border: 1px solid $teal;
+      margin-bottom: 35px;
+    }
+    h4 {
+      text-align: center;
+    }
+    .mapborderbox1 {
+      border: 1px solid $pink;
+      width: 292px;
+      height: 282px;
+    }
+
+    .mapborderbox2 {
+      border: 1px solid $pink;
+      width: 292px;
+      height: 282px;
+      position: relative;
+      top: 10px;
+      left: 10px;
+    img {
+      height: 100%;
+      padding: 20px 10px 10px 20px;
+      position: relative;
+      top: -10px;
+      left: -10px;
     }
   }
-  .contact-link {
-    display: flex;
-    justify-content: center;
-    border: 2px solid $pink;
-    // width: 60vw;
-
+  .contact-links {
+    .address {
+      text-align: center;
+      margin: 30px 0;
+    }
+    hr {
+      width: 70vw;
+      border: 1px solid $yellow;
+      margin-bottom: 35px;
+    }
+    p {
+      text-align: center;
+    }
+    .borderbox {
+      display: flex;
+      justify-content: center;
+      width: 203px;
+      height: 50px;
+      border: 1px solid $teal;
+      margin-left: 10vw;
+      margin-bottom: 35px;
+      p {
+        align-self: center;
+        font-family: DroidSans-Bold;
+        font-size: 26px;
+        letter-spacing: 0.54px;
+      }
+    }
+    .contact-link {
+      display: flex;
+      justify-content: center;
+      border: 2px solid $pink;
+      }
+    }
   }
 }
 
-.aboutHeader {
+
+.whoWeAre {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;;
-  background-image: url("/img/tree-yarn.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  padding-top: 100px;
-  .header-text {
-    h1 {
-      color: $primaryLight;
-      @include text(4em, $weight: lighter, $letter-spacing: 2px);
-      font-family: 'Fjalla One', sans-serif;
-      text-shadow: 0px 2px 4px rgba(74,73,74,0.62);
-      text-align: center;
-      margin-top: 180px;
-    }
-  }
-  .down-arrow-icon {
-    margin-left: 46vw;
-  }
-}
-.whoWeAre {
-  width: 88%;
-  margin-left: 6vw;
+  align-items: center;
+  width: 88vw;
+  margin: 0 auto;
+
   h3 {
     text-align: center;
     margin-top: 45px;
@@ -194,13 +172,23 @@
     margin-bottom: 30px;
   }
   .whoborderbox1 {
-      border: 1px solid $teal;
+    border: 1px solid $teal;
+
   }
   .whoborderbox2 {
     border: 1px solid $teal;
     position: relative;
     top: 10px;
     left: 10px;
+  }
+  .aboutContent {
+    margin: 0 20px;
+    p {
+      text-align: center;
+      letter-spacing: 1.21px;
+      padding: 10px;
+      line-height: 24px;
+    }
   }
   .pink {
     width: 70vw;
@@ -228,40 +216,37 @@
     padding: 20px;
   }
 }
-.aboutContent {
-  margin: 0 40px;
-  p {
-    text-align: center;
-    letter-spacing: 1.21px;
-    padding: 10px;
-    line-height: 24px;
-  }
-}
 
 // Project Detail Content
 
 #portfolio-detail-content {
   padding-top: 25px;
+}
+.portfolio-detail-content {
+  width: 86vw;
+  margin-left: 7vw;
   h3, p {
     @extend %centeredText;
   }
   .goal {
     margin-bottom: 60px;
+
     hr {
       border: 1px solid $teal;
       margin-bottom: 20px;
     }
     .goal-content {
       @include flex($direction: column, $justify: center);
-      padding: 10px 20px;
+      padding: 10px 20px 10px 10px;
     }
     .box1 {
-      height: 230px;
       border: 1px solid $teal;
     }
     .box2 {
-      height: 230px;
       border: 1px solid $pink;
+      position: relative;
+      top: 10px;
+      left: 10px;
     }
   }
   .helpers {
@@ -289,7 +274,7 @@
   .time-location {
     margin-top: 50px;
     width: 95%;
-    margin: 0 auto;
+    margin: 0;
     hr {
       border: 1px solid $yellow;
     }
@@ -334,35 +319,9 @@
       margin: 0 auto;
     }
   }
-  .completedBtn {
-    border: 2px solid $teal;
-    background-color: $teal;
-    color: $primaryLight;
-    width: 90%;
-    padding: 15px;
-    @extend %centeredText;
-    @extend %headerFont;
-    font-size: 16px;
-    display: block;
-    margin: 0 auto;
-  }
-  .uncompletedBtn {
-    border: 2px solid $teal;
-    background-color: $primaryLight;
-    color: $primaryDark;
-    width: 90%;
-    padding: 15px;
-    @extend %centeredText;
-    @extend %headerFont;
-    font-size: 16px;
-    display: block;
-    margin: 0 auto;
-  }
-  .defaultBtn {
-    display: block;
-    margin: 0 auto;
-  }
 }
+
+
 
 
 
