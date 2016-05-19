@@ -9,10 +9,9 @@
     font-style: italic;
     text-align: center;
     align-self: center;
+    margin: 0 auto;
   }
   input, {
-    display: flex;
-    align-self: center;
     width: 40vw;
     height: 24px;
     box-shadow: 0px 0px 6px rgba(0,0,0,0.30);
@@ -39,9 +38,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  .form-group {
+    margin: 18px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   label {
     text-align: center;
-    margin: 8px;
-  }
+    font-style: italic;
+    margin-bottom: 8px;
+    max-width: 70vw;
 
+  }
+  input {
+    width: 65vw;
+    height: 24px;
+    margin-bottom: 10px;
+
+  }
+  textarea {
+    width: 70vw;
+
+  }
+  button {
+    display: block;
+    margin: 5px auto;
+  }
+  .save {
+    border: 1px solid $teal;
+    background-color: white;
+    padding: 4px 20px;
+  }
+  .cancel {
+    color: red;
+  }
 }
