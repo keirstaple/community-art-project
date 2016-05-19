@@ -18,8 +18,8 @@
   position: absolute;
   height: 100vh;
   top: 0px;
-  left: 500px;
-  width: 70%;
+  left: 375px;
+  width: 50%;
   overflow: auto;
   transition: all 200ms linear;
 }
@@ -36,6 +36,10 @@
   height: 100vh;
   overflow: auto;
   transition: all 200ms linear;
+  a {
+    color: $primaryLight;
+    @include text($l-height: 60px);
+  }
 }
 
 .mainNav-opened, .mainNav-closed {

@@ -36,19 +36,6 @@
         outline: none;
       }
     }
-    button {
-      border: 1px solid white;
-      padding: 1.5%;
-      width: 35%;
-      display: block;
-      margin: 15px auto 0 auto;
-      @extend %headerFont;
-      @extend %uppercase;
-      background-color: white;
-      border-radius: 5px;
-      font-size: 18px;
-      color: $teal;
-    }
   }
 }
 
@@ -69,18 +56,6 @@
     width: 80%;
     @include text(4em, $weight: lighter, $letter-spacing: 2px);
   }
-  // h1 {
-  //   color: $primaryLight;
-  //   @include text(4em, $weight: lighter, $letter-spacing: 2px);
-  //   font-family: 'Fjalla One', sans-serif;
-  //   text-shadow: 0px 2px 4px rgba(74,73,74,0.62);
-  //   text-align: center;
-  //   margin-top: 100px;
-  // }
-  // img {
-  // margin-left: 188px;
-  //
-  // }
 }
 
 .contact-container {
@@ -115,50 +90,74 @@
       position: relative;
       top: 10px;
       left: 10px;
-    img {
-      height: 100%;
-      padding: 20px 10px 10px 20px;
-      position: relative;
-      top: -10px;
-      left: -10px;
-    }
-  }
-  .contact-links {
-    .address {
-      text-align: center;
-      margin: 30px 0;
-    }
-    hr {
-      width: 70vw;
-      border: 1px solid $yellow;
-      margin-bottom: 35px;
-    }
-    p {
-      text-align: center;
-    }
-    .borderbox {
-      display: flex;
-      justify-content: center;
-      width: 203px;
-      height: 50px;
-      border: 1px solid $teal;
-      margin-left: 10vw;
-      margin-bottom: 35px;
-      p {
-        align-self: center;
-        font-family: DroidSans-Bold;
-        font-size: 26px;
-        letter-spacing: 0.54px;
+      img {
+        height: 100%;
+        padding: 20px 10px 10px 20px;
+        position: relative;
+        top: -10px;
+        left: -10px;
       }
     }
-    .contact-link {
-      display: flex;
-      justify-content: center;
-      border: 2px solid $pink;
+    .contact-links {
+      .address {
+        text-align: center;
+        margin: 30px 0;
+      }
+      hr {
+        width: 70vw;
+        border: 1px solid $yellow;
+        margin-bottom: 35px;
+      }
+      p {
+        text-align: center;
+      }
+      .borderbox {
+        display: flex;
+        justify-content: center;
+        width: 203px;
+        height: 50px;
+        border: 1px solid $teal;
+        margin-left: 10vw;
+        margin-bottom: 35px;
+        p {
+          align-self: center;
+          @extend %bodyFont;
+          @include text($weight: bold);
+          font-size: 26px;
+          letter-spacing: 0.54px;
+        }
+      }
+      .contact-link {
+        button {
+          display: block;
+          margin: 0 auto;
+          border: 1px solid $pink;
+          padding: 10px 20px;
+          color: $primaryLight;
+          background-color: $pink;
+          border-radius: 5px;
+          @extend %headerFont;
+          @extend %centeredText;
+          @extend %uppercase;
+          width: 45%;
+          @include text(18px);
+        }
       }
     }
   }
 }
+
+// border: 1px solid white;
+// padding: 1.5%;
+// width: 35%;
+// display: block;
+// margin: 15px auto 0 auto;
+// @extend %headerFont;
+// @extend %uppercase;
+// background-color: white;
+// border-radius: 5px;
+// font-size: 18px;
+// color: $teal;
 
 
 .whoWeAre {

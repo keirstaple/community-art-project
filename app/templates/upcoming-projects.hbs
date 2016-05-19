@@ -1,9 +1,16 @@
-<div class="container">
-
-<h1>Upcoming Projects</h1>
+<div class="upcomingHeader">
+  <div class="header-text">
+    <h1>Upcoming Projects</h1>
+  </div>
+  {{#scroll-to href='.upcoming-content'}}
+    <img class="down-arrow-icon" src="/img/down-chevron.png" alt="down arrow icon" />
+  {{/scroll-to}}
+</div>
+<div class="container upcoming-content">
+  <br>
+  {{new-project save="save"}}
+  <br>
   {{#each model as |project|}}
     {{project-tile project=project}}
   {{/each}}
 </div>
-
-{{new-project save="save"}}

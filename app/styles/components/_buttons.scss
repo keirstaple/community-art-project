@@ -95,3 +95,17 @@
     margin: 0 auto;
   }
 }
+
+.primaryBtn {
+  border: 1px solid white;
+  padding: 1.5%;
+  width: 35%;
+  display: block;
+  margin: 15px auto 0 auto;
+  @extend %headerFont;
+  @extend %uppercase;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  color: $teal;
+}
