@@ -32,8 +32,12 @@
 }
 
 .project-detail-header {
-  @include flex($direction: column, $justify: center, $align-items: center);
   height: 90vh;
+  @include flex($direction: column, $justify:flex-end, $align-items: center);
+  h1 {
+    margin-bottom: 155px;
+    @extend %centeredText;
+  }
   h1 {
     color: $primaryLight;
     text-shadow: 0px 2px 4px rgba(0,0,0,0.50);

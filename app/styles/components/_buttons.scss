@@ -18,7 +18,29 @@
   @extend %centeredText;
   padding: 5px 0px;
   width: 40%;
-  margin: 0 auto;
+  margin: -20px auto 0 auto;
+  transition: all 200ms linear;
+  &:hover {
+    transition: all 200ms linear;
+    background-color: $teal;
+    color: $primaryLight;
+  }
+}
+
+.viewAllPink {
+  @extend %headerFont;
+  @extend %uppercase;
+  border: 3px solid $pink;
+  @extend %centeredText;
+  padding: 5px 0px;
+  width: 40%;
+  margin: -20px auto 0 auto;
+  transition: all 200ms linear;
+  &:hover {
+    transition: all 200ms linear;
+    background-color: $pink;
+    color: $primaryLight;
+  }
 }
 
 .down-arrow-icon {
@@ -29,6 +51,8 @@
 .defaultBtn {
   border: 1px solid $primaryDark;
   background-color: white;
+  @extend %bodyFont;
+  padding: 3px 5px;
 }
 
 .uncompletedBtn {

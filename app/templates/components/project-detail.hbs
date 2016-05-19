@@ -1,4 +1,3 @@
-<!-- {{yield}} -->
 <div class="project-detail-header" style="background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url({{project.image}}); background-size:cover; background-position: center;">
   <h1><strong>{{project.title}}</strong></h1>
   {{#scroll-to href='#portfolio-detail-content'}}
@@ -61,6 +60,7 @@
       <button class="uncompletedBtn" {{action 'completedProject' project.id}}>Mark as Completed</button>
       {{/if}}
       <br>
+      <p>Are you the host of this event?</p>
       <button class="defaultBtn" {{action 'delete' project}}>Delete</button>
     </div>
-</div>
+  </div>
