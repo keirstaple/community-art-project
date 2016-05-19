@@ -1,5 +1,12 @@
-<div class="container">
-  <h1>Completed Projects</h1>
+<div class="completedHeader">
+  <div class="header-text">
+    <h1>Finished Projects</h1>
+  </div>
+  {{#scroll-to href='.completed-content'}}
+    <img class="down-arrow-icon" src="/img/down-chevron.png" alt="down arrow icon" />
+  {{/scroll-to}}
+</div>
+<div class="container completed-content">
   {{#each model as |project|}}
     {{completed-project-tile project=project}}
   {{/each}}

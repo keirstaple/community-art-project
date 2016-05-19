@@ -25,23 +25,3 @@ export default Ember.Route.extend({
     }
   }
 });
-
-// export default Ember.Route.extend({
-//   model: function() {
-//     return this.store.query('project', {
-//       orderBy: 'complete',
-//       equalTo: true,
-//     });
-//   },
-//   actions: {
-//     save(params) {
-//       var newProject = this.store.createRecord('project', params);
-//       newProject.save();
-//       this.transitionTo('index');
-//     },
-//     destroyProject(project) {
-//       project.destroyRecord();
-//       this.transitionTo('index');
-//     }
-//   }
-// });
