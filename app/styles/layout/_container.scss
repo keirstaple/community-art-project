@@ -59,20 +59,28 @@
 .contactHeader {
   background-image: url("/img/contact-background.png");
   background-size: cover;
-  height: 80vh;
-  padding-top: 100px;
+  height: 90vh;
+  @include flex($direction: column, $justify:flex-end, $align-items: center);
   h1 {
+    margin-bottom: 170px;
+    @extend %centeredText;
     color: $primaryLight;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+    width: 80%;
     @include text(4em, $weight: lighter, $letter-spacing: 2px);
-    font-family: 'Fjalla One', sans-serif;
-    text-shadow: 0px 2px 4px rgba(74,73,74,0.62);
-    text-align: center;
-    margin-top: 100px;
   }
-  img {
-  margin-left: 188px;
-
-  }
+  // h1 {
+  //   color: $primaryLight;
+  //   @include text(4em, $weight: lighter, $letter-spacing: 2px);
+  //   font-family: 'Fjalla One', sans-serif;
+  //   text-shadow: 0px 2px 4px rgba(74,73,74,0.62);
+  //   text-align: center;
+  //   margin-top: 100px;
+  // }
+  // img {
+  // margin-left: 188px;
+  //
+  // }
 }
 
 .contact-container {
@@ -82,10 +90,9 @@
   align-items: center;
   .contact-content {
     h3 {
-      align-self: center;
-      text-align: center;
-      width: 50vw;
-      margin-left: 10vw;
+      @extend %centeredText;
+      margin: 30px auto 0 auto;
+      width: 60vw;
     }
     hr {
       width: 70vw;
