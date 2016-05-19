@@ -43,11 +43,11 @@
         <label for="image">Image URL</label>
         {{input value=image id="image"}}
       </div>
-      <button class="save" {{action 'save'}}>Save</button>
+      <button class="save secondaryBtn" {{action 'save'}}>Save</button>
       <button class="cancel" {{action 'cancelNewProjectForm'}}>Cancel</button>
     </form>
   </div>
 </div>
 {{else}}
-  <button class="secondaryBtn"{{action 'projectFormShow'}}>New Project</button>
+  <button class="primaryBtn"{{action 'projectFormShow'}}>New Project</button>
 {{/if}}
