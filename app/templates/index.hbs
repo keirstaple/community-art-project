@@ -9,7 +9,7 @@
 </div>
 <div class="container">
   <div id="homepage-content">
-    {{new-project save="save"}}
+    <!-- {{new-project save="save"}} -->
     <div class="projectFeed">
       <h3>Upcoming Art Projects</h3>
       <hr>
@@ -19,7 +19,7 @@
         {{/each}}
       </ul>
     </div>
-    <p class="viewAll">View All</p>
+    {{#link-to 'upcoming-projects'}}<p class="viewAll">View All</p>{{/link-to}}
   </div>
 </div>
 <div class="newsletter-container">
