@@ -1,7 +1,4 @@
-.projectItem {
-  margin-bottom: 50px;
 
-}
 .projectTile {
   margin-left: 10px;
   // background-image: url("/img/double-border.png");
@@ -29,18 +26,24 @@
     }
   }
 }
+.projectItem {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  .box1 {
+    border: 1px solid $teal;
+    height: 150px;
+  }
 
-.box1 {
-  border: 1px solid $teal;
-  height: 150px;
-}
+  .box2 {
+    border: 1px solid $teal;
+    height: 150px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding-right: 10px;
+  }
 
-.box2 {
-  border: 1px solid $teal;
-  height: 150px;
-  position: relative;
-  top: 10px;
-  left: 10px;
 }
 
 .projectFeed {

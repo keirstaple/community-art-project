@@ -240,27 +240,31 @@
 
 // Project Detail Content
 
-#portfolio-detail-content {
+.portfolio-detail-content {
+  width: 86vw;
+  margin-left: 7vw;
   h3, p {
     @extend %centeredText;
   }
   .goal {
     margin-bottom: 60px;
+
     hr {
       border: 1px solid $teal;
       margin-bottom: 20px;
     }
     .goal-content {
       @include flex($direction: column, $justify: center);
-      padding: 10px 20px;
+      padding: 10px 20px 10px 10px;
     }
     .box1 {
-      height: 230px;
       border: 1px solid $teal;
     }
     .box2 {
-      height: 230px;
       border: 1px solid $pink;
+      position: relative;
+      top: 10px;
+      left: 10px;
     }
   }
   .helpers {
