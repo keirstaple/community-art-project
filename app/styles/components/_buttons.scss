@@ -11,6 +11,18 @@
   margin: 0 auto;
 }
 
+.secondaryBtnPink {
+  border: 1px solid $pink;
+  background-color: $pink;
+  color: $primaryLight;
+  @extend %headerFont;
+  @include text(1.2em);
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
 .viewAll {
   @extend %headerFont;
   @extend %uppercase;
