@@ -4,7 +4,6 @@
 }
 .projectTile {
   margin-left: 10px;
-  // background-image: url("/img/double-border.png");
   background-repeat: no-repeat;
   height: 180px;
   @include flex();
@@ -30,14 +29,7 @@
   }
 }
 
-.box1 {
-  border: 1px solid $teal;
-  height: 150px;
-}
-
 .box2 {
-  border: 1px solid $teal;
-  height: 150px;
   position: relative;
   top: 10px;
   left: 10px;
@@ -48,9 +40,43 @@
     @extend %centeredText;
     margin-bottom: 0px;
   }
-  hr {
-    width: 65%;
-    border: 1px solid $teal;
-    margin-bottom: 35px;
+  .upcoming {
+    hr {
+      width: 65%;
+      border: 1px solid $teal;
+      margin-bottom: 35px;
+    }
+    .box1 {
+      border: 1px solid $teal;
+      height: 150px;
+    }
+
+    .box2 {
+      border: 1px solid $teal;
+      height: 150px;
+      position: relative;
+      top: 10px;
+      left: 10px;
+    }
+  }
+  .completed {
+    margin-top: 50px;
+    hr {
+      width: 65%;
+      border: 1px solid $pink;
+      margin-bottom: 35px;
+    }
+    .box1 {
+      border: 1px solid $pink;
+      height: 150px;
+    }
+
+    .box2 {
+      border: 1px solid $pink;
+      height: 150px;
+      position: relative;
+      top: 10px;
+      left: 10px;
+    }
   }
 }

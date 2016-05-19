@@ -11,15 +11,27 @@
   <div id="homepage-content">
     <!-- {{new-project save="save"}} -->
     <div class="projectFeed">
-      <h3>Upcoming Art Projects</h3>
-      <hr>
-      <ul>
-        {{#each model as |project|}}
-        {{project-tile project=project}}
-        {{/each}}
-      </ul>
+      <div class="upcoming">
+        <h3>Upcoming Art Projects</h3>
+        <hr>
+        <ul>
+          {{#each model.uncompleted as |project|}}
+            {{project-tile project=project}}
+          {{/each}}
+        </ul>
+        {{#link-to 'upcoming-projects'}}<p class="viewAll">View All</p>{{/link-to}}
+      </div>
+      <div class="completed">
+        <h3>Completed Projects</h3>
+        <hr>
+        <ul>
+          {{#each model.completed as |project|}}
+            {{project-tile project=project}}
+          {{/each}}
+        </ul>
+        {{#link-to 'completed-projects'}}<p class="viewAllPink">View All</p>{{/link-to}}
+      </div>
     </div>
-    {{#link-to 'upcoming-projects'}}<p class="viewAll">View All</p>{{/link-to}}
   </div>
 </div>
 <div class="newsletter-container">
