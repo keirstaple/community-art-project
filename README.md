@@ -1,7 +1,6 @@
 # Community-art-project
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+##pARTicipate
+This Application lets users list and discover public art projects in the _Portland_ area. This is a community art based application that is a call for users to get out and get involved with art projects in the area. Users are also able to see previous projects that have been created, a map to that location, and a brief description of the project.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Known Bugs
 
-* When going from index route to project-detail route, app does not scroll to the top. 
+* When going from index route to project-detail route, app does not scroll to the top.
 
 ## Installation
 
@@ -23,6 +22,7 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+
 
 ## Running / Development
 
@@ -54,3 +54,15 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+## Known Bugs
+    No known bugs at this time.
+
+## Support and contact details
+
+  If you have any troubles ideas or concerns feel free to contact us. We are in the early stages of development, any insights would be appreciated. Feel free to contact any of the members on this repository.
+
+### License
+
+    This software is licensed under the MIT license.
+
+    Copyright (c) 2016 team pARTicipate.
