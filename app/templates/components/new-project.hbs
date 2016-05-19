@@ -35,15 +35,16 @@
 
       <div class="form-group">
         <label for="summary">Provide a Project Summary and Any Important Details</label>
-        {{textarea value=summary id="summary"}}
+        <br>
+        {{textarea rows="5" value=summary id="summary"}}
       </div>
 
       <div class="form-group">
         <label for="image">Image URL</label>
         {{input value=image id="image"}}
       </div>
-      <button {{action 'save'}}>Save</button>
-      <button {{action 'cancelNewProjectForm'}}>Cancel</button>
+      <button class="save" {{action 'save'}}>Save</button>
+      <button class="cancel" {{action 'cancelNewProjectForm'}}>Cancel</button>
     </form>
   </div>
 </div>
