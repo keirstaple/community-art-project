@@ -15,7 +15,8 @@ export default Ember.Component.extend({
          host_name: this.get('host') ? this.get('host') : " ",
          date: this.get('date') ? this.get('date') : " ",
          time: this.get('time') ? this.get('time') : " ",
-         location: this.get('location') ? this.get('location') : " ",
+         latitude: this.get('latitude') ? this.get('latitude') : " ",
+         longitude: this.get('longitude') ? this.get('longitude') : " ",
          contributor: this.get('contributor') ? this.get('contributor') : " ",
          summary: this.get('summary') ? this.get('summary') : " ",
          image: this.get('image') ? this.get('image') : " "
