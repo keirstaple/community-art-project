@@ -293,14 +293,12 @@
     .map-container {
       margin-bottom: 30px;
       .map {
-        // background-image: url("/img/map.png");
-        background-repeat: no-repeat;
-        // @include size(250px);
         margin: 15px auto 0 auto;
       }
       .map-display {
-        height: 250px;
-        width: 250px;
+        height: 240px;
+        width: 260px;
+        margin: 15px;
       }
       .box1 {
         border: 1px solid $teal;
