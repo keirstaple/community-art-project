@@ -40,10 +40,12 @@
           {{project.time}}</p>
         </div>
         <div class="map-container">
+          <button {{action 'showMap' project}}>Show Map</button>
           <div class="box1">
             <div class="box2">
               <div class="map">
-                {{google-map project=project}}
+                <!-- {{google-map project=project}} -->
+                <div class="map-display"></div>
               </div>
             </div>
           </div>
