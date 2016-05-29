@@ -8,7 +8,7 @@
 }
 
 .newsletter-container {
-  background-image: linear-gradient(to bottom, rgba($teal,0.76),rgba($teal,0.76)) , url("/img/girl-brick-art.png");
+  background-image: linear-gradient(to bottom, rgba($teal,0.76),rgba($teal,0.76)) , url("../img/girl-brick-art.png");
   background-size: cover;
   height: 50vh;
   padding-top: 100px;
@@ -44,7 +44,7 @@
 }
 
 .contactHeader {
-  background-image: url("/img/contact-background.png");
+  background-image: url("../img/contact-background.png");
   background-size: cover;
   height: 90vh;
   @include flex($direction: column, $justify:flex-end, $align-items: center);
