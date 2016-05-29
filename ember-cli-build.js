@@ -6,7 +6,8 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     fingerprint: {
       // ignore: ['dist/img']
-      ignore: ['dist/assets'], ['dist/img']
+      exclude: ['dist/assets']
+      prepend: '../../public/img/'
     }
     // Add options here
   });
