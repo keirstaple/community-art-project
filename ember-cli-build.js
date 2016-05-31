@@ -5,7 +5,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     fingerprint: {
-      ignore: ['public']
+      ignore: ['dist/assets', 'dist/img']
       // enabled: false
     }
     // Add options here
