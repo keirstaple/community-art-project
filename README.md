@@ -51,9 +51,9 @@ Follow this tutorial:
 [Ember-cli-github-pages](https://github.com/poetic/ember-cli-github-pages)
 
 Once you've done this once, you simply have to do the following after you make new commits:
-`git checkout master`
-`ember github-pages:commit --message "gh-pages release"`
-`git push origin gh-pages:gh-pages`
+* `git checkout master`
+* `ember github-pages:commit --message "gh-pages release"`
+* `git push origin gh-pages:gh-pages`
 
 ## Further Reading / Useful Links
 
