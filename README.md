@@ -2,7 +2,9 @@
 ##pARTicipate
 This Application lets users list and discover public art projects in the _Portland_ area. This is a community art based application that is a call for users to get out and get involved with art projects in the area. Users are also able to see previous projects that have been created, a map to that location, and a brief description of the project.
 
-Click [here](http://keirstaple.github.io/community-art-project/) to view the live GH-Pages version of the site. To view the project the way it was intended, right click on the page and click inspect. Then click on the toggle device icon on the top navbar of the inspector (looks like a smartphone and tablet) and select the iPhone 6 Plus. We are still tweaking some of the UI to make it fully responsive to the cellular format.
+Click [here](http://keirstaple.github.io/community-art-project/) to view the live GH-Pages version of the site. To view the project the way it was intended, drag your browser window all the way to the left to mimic mobile screen width.
+
+You can also right click on the page and select "Inspect". Then click on the toggle device icon on the top navbar of the inspector (looks like a smartphone and tablet) and select the "iPhone 6 Plus". We are still tweaking some of the UI to make it fully responsive to the mobile format. 
 
 ## Prerequisites
 
@@ -17,6 +19,7 @@ You will need the following things properly installed on your computer.
 ## Known Bugs
 
 * When going from index route to project-detail route, app does not scroll to the top.
+* When we deploy, the Google Maps API doesn't seem to grab the coordinates from the database like it does during development. This is something we want to fix.
 
 ## Installation
 
