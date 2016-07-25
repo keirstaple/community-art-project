@@ -47,7 +47,13 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+Follow this tutorial:
+[Ember-cli-github-pages](https://github.com/poetic/ember-cli-github-pages)
+
+Once you've done this once, you simply have to do the following after you make new commits:
+`git checkout master`
+`ember github-pages:commit --message "gh-pages release"`
+`git push origin gh-pages:gh-pages`
 
 ## Further Reading / Useful Links
 
