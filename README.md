@@ -19,7 +19,7 @@ You will need the following things properly installed on your computer.
 ## Known Bugs
 
 * When going from index route to project-detail route, app does not scroll to the top.
-* When we deploy, the Google Maps API doesn't seem to grab the coordinates from the database like it does during development. This is something we want to fix.
+* Project no longer able to feed coordinates to Google Maps from Firebase
 
 ## Installation
 
