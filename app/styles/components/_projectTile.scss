@@ -1,7 +1,10 @@
 .projectTile {
   margin-left: 10px;
   background-repeat: no-repeat;
-  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
   @include flex();
   .left-column {
     width: 100px;
@@ -34,12 +37,16 @@
 .projectItem {
   display: flex;
   justify-content: center;
+  // align-items: center;
   margin-bottom: 50px;
   width: 80vw;
   .box1 {
     border: 1px solid $teal;
     height: 150px;
     width: 100%;
+    @media screen and (min-width: 750px) {
+      width: 50%;
+    }
   }
   .box2 {
     border: 1px solid $teal;
